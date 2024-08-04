@@ -1,8 +1,16 @@
+import { Lato } from "next/font/google";
 import Image from "next/image";
+
+const lato = Lato({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center gap-5">
+    <section
+      className={`${lato.className} flex flex-col items-center gap-5 py-10`}
+    >
       <h1 className="text-5xl md:text-7xl text-center font-medium text-dark">
         TaskBud
       </h1>
@@ -17,16 +25,17 @@ export default function HeroSection() {
         .
       </h2>
 
-      <button className="bg-[#222] px-7 py-3 text-primary font-medium text-lg rounded-md transition-colors hover:bg-[#111]">
+      <button className="bg-[#222] px-7 py-3 mt-3 text-primary font-medium text-lg rounded-md transition-colors hover:bg-[#111]">
         Get Started Now
       </button>
 
-      <div className="md:w-9/12 mt-5 flex items-center flex-col mx-auto border">
+      <div className="md:w-9/12 mt-5 flex items-center flex-col mx-auto">
         <Image
-          width={500}
-          height={500}
+          width={600}
+          height={600}
           src={"/assets/images/hero/hero.png"}
           alt="app-demo"
+          className="border drop-shadow-sm"
         />
       </div>
     </section>
