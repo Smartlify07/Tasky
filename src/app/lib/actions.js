@@ -3,7 +3,7 @@ import { revalidatePath } from "next/cache";
 
 export async function addTodo(title) {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/todos`, {
+    const response = await fetch(`/api/todos`, {
       method: "POST",
       body: JSON.stringify({
         title,
@@ -23,16 +23,13 @@ export async function addTodo(title) {
 
 export async function updateTodo(title, status, id) {
   try {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/todos/${id}`,
-      {
-        method: "PATCH",
-        body: JSON.stringify({
-          title,
-          status,
-        }),
-      }
-    );
+    const response = await fetch(`/api/todos/${id}`, {
+      method: "PATCH",
+      body: JSON.stringify({
+        title,
+        status,
+      }),
+    });
 
     const data = await response.json();
     revalidatePath(`/dashboard`);
@@ -46,7 +43,7 @@ export async function updateTodo(title, status, id) {
 
 export async function deleteTodo(id) {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/todos/`, {
+    const response = await fetch(`/api/todos/`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
