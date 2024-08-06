@@ -1,5 +1,6 @@
 import { Lato } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const lato = Lato({
   weight: ["400", "700"],
@@ -25,13 +26,16 @@ export default function HeroSection() {
         .
       </h2>
 
-      <button className="bg-[#222] px-7 py-3 mt-3 text-primary font-medium text-lg rounded-md transition-colors hover:bg-[#111]">
+      <Link
+        href={"/dashboard/"}
+        className="bg-[#222] px-7 py-3 mt-3 text-primary font-medium text-lg rounded-md transition-colors hover:bg-[#111]"
+      >
         Get Started Now
-      </button>
+      </Link>
 
       <div className="md:w-9/12 mt-5 flex items-center flex-col mx-auto">
         <Image
-          width={600}
+          width={700}
           height={600}
           src={"/assets/images/hero/hero.png"}
           alt="app-demo"
