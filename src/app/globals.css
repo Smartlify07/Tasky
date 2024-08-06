@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.todo-statuses {
+  @apply flex flex-wrap gap-5;
+}
+.radio-label-pending {
+  @apply flex items-center rounded transition-[background-color] duration-[0.2s,border-color]  py-2 px-6;
+}
+.radio-label-in-progress {
+  @apply flex items-center bg-transparent  rounded transition-[background-color] duration-[0.2s,border-color] border   text-yellow-500 py-2 px-6;
+}
+.radio-label-completed {
+  @apply flex items-center bg-transparent rounded transition-[background-color] duration-[0.2s,border-color] text-green-500 py-2 px-6;
+}
+
+.radio-input {
+  @apply absolute opacity-0;
+}
+.radio-input:checked + .radio-label-pending {
+  @apply bg-gray-700 text-white;
+}
+.radio-input:checked + .radio-label-in-progress {
+  @apply bg-yellow-600 text-white;
+}
+.radio-input:checked + .radio-label-completed {
+  @apply bg-green-700 text-white;
+}
+
+.radio-inner-circle {
+  @apply inline-block w-[1em] h-[1em] transition-[border-color] duration-[0.2s] relative mr-[0.5em] rounded-[50%] border-2 border-solid border-white;
+}
+.radio-label:hover .radio-inner-circle {
+  @apply border-[rgb(233,233,233)];
+}
+.radio-input:checked + .radio-label .radio-inner-circle {
+  @apply border-[#ff1111] after:content-[''] after:block after:w-[0.5em] after:h-[0.5em] after:bg-[#ff1111] after:absolute after:-translate-x-2/4 after:-translate-y-2/4 after:rounded-[50%] after:left-2/4 after:top-2/4;
+}
