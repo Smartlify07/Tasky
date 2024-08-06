@@ -7,8 +7,8 @@ const lato = Lato({
 });
 export default function SideNav() {
   return (
-    <aside className="px-6 py-10 min-h-screen w-full md:w-2/12 ">
-      <div className="flex flex-col   gap-5">
+    <aside className="px-6 py-10 hidden min-h-screen w-full md:block md:w-5/12 lg:w-3/12 ">
+      <div className="flex flex-col gap-5">
         <h1 className="text-2xl font-medium self-center  w-full  text-dark">
           TaskBud
         </h1>

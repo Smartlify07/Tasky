@@ -238,6 +238,32 @@ export function useIcons() {
     </svg>
   );
 
+  const Add = (props) => (
+    <svg
+      height="200"
+      width="200"
+      viewBox="0 0 256 256"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <g
+        id="galaAdd0"
+        fill="none"
+        stroke="currentColor"
+        strokeDasharray="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeMiterlimit="4"
+        strokeOpacity="1"
+        strokeWidth="16"
+      >
+        <circle id="galaAdd1" cx="128" cy="128" r="112" />
+        <path id="galaAdd2" d="M 79.999992,128 H 176.0001" />
+        <path id="galaAdd3" d="m 128.00004,79.99995 v 96.0001" />
+      </g>
+    </svg>
+  );
+
   const Sync = (props) => (
     <svg
       height="200"
@@ -252,5 +278,203 @@ export function useIcons() {
       />
     </svg>
   );
-  return { GoogleDrive, Trello, Slack, Trophy, Star, Medal, ThemeColors, Sync };
+
+  const Search = (props) => (
+    <svg
+      height="200"
+      width="200"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="m16.893 16.92l3.08 3.08m-.889-8.419c0 4.187-3.383 7.581-7.556 7.581c-4.172 0-7.555-3.394-7.555-7.58C3.973 7.393 7.356 4 11.528 4c4.173 0 7.556 3.394 7.556 7.581Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      />
+    </svg>
+  );
+
+  const Send = (props) => (
+    <svg
+      height="200"
+      width="200"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.534.534 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993l16.93-5.925Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      />
+    </svg>
+  );
+
+  const CaretRightOutline = (props) => (
+    <svg
+      height="200"
+      width="200"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="m9.929 4.858l6.364 6.364a1 1 0 0 1 0 1.414L9.929 19"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+
+  const ArrowPath = (props) => (
+    <svg
+      height="200"
+      width="200"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      />
+    </svg>
+  );
+
+  const Check = (props) => (
+    <svg
+      height="200"
+      width="200"
+      viewBox="0 0 16 16"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M13.488 3.43a.75.75 0 0 1 .081 1.058l-6 7a.75.75 0 0 1-1.1.042l-3.5-3.5A.75.75 0 0 1 4.03 6.97l2.928 2.927l5.473-6.385a.75.75 0 0 1 1.057-.081Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  );
+
+  const Clock = (props) => (
+    <svg
+      height="200"
+      width="200"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M14.848 13.067L12.5 11.711V7a.5.5 0 0 0-1 0v5a.5.5 0 0 0 .25.433l2.598 1.5a.496.496 0 0 0 .682-.183a.5.5 0 0 0-.182-.683zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10c5.52-.006 9.994-4.48 10-10c0-5.523-4.477-10-10-10zm0 19a9 9 0 1 1 0-18a9.01 9.01 0 0 1 9 9a9 9 0 0 1-9 9z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+
+  const Dashboard = (props) => (
+    <svg
+      height="200"
+      width="200"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M2 5a2 2 0 0 1 2-2h6v18H4a2 2 0 0 1-2-2V5Zm12-2h6a2 2 0 0 1 2 2v5h-8V3Zm0 11h8v5a2 2 0 0 1-2 2h-6v-7Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+    </svg>
+  );
+
+  const Home = (props) => (
+    <svg
+      height="200"
+      width="200"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1z"
+        fill="currentColor"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+    </svg>
+  );
+
+  const Calendar = (props) => (
+    <svg
+      height="200"
+      width="200"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7zm12-4v4M8 3v4m-4 4h16m-9 4h1m0 0v3"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+    </svg>
+  );
+
+  const TaskAlt = (props) => (
+    <svg
+      height="200"
+      width="200"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q1.625 0 3.075.475T17.75 3.8L16.3 5.275q-.95-.6-2.025-.938T12 4Q8.675 4 6.337 6.337T4 12q0 3.325 2.337 5.663T12 20q3.325 0 5.663-2.337T20 12q0-.45-.05-.9t-.15-.875L21.425 8.6q.275.8.425 1.65T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm-1.4-5.4l-4.25-4.25l1.4-1.4l2.85 2.85l10-10.025l1.4 1.4L10.6 16.6Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+
+  return {
+    GoogleDrive,
+    Trello,
+    Slack,
+    Trophy,
+    Star,
+    Medal,
+    ThemeColors,
+    Sync,
+    Search,
+    Add,
+    Send,
+    CaretRightOutline,
+    ArrowPath,
+    Check,
+    Clock,
+    Dashboard,
+    Home,
+    Calendar,
+    TaskAlt,
+  };
 }
