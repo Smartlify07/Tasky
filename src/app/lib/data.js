@@ -6,9 +6,7 @@ export async function fetchTodos() {
 }
 
 export async function fetchTodo(id) {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/todos/${id}`
-  );
+  const response = await fetch(`/api/todos/${id}`);
 
   const data = await response.json();
 
