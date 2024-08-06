@@ -14,7 +14,7 @@ export async function addTodo(title) {
     const data = await response.json();
     console.log(data);
     revalidatePath("/dashboard");
-    revalidatePath("/dashboard/todoss");
+    revalidatePath("/dashboard/todos");
     return data;
   } catch (error) {
     console.error(error);
