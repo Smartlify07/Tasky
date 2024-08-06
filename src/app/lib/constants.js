@@ -1,3 +1,5 @@
+import { checkEnvironment } from "../utils/checkEnv";
+
 export const taskyFeatures = [
   {
     name: "Gamified Experience",
@@ -25,3 +27,5 @@ export const taskyFeatures = [
     icon: "https://example.com/icons/real-time-sync.png",
   },
 ];
+
+export const API_ROUTE = checkEnvironment().concat("/api/todos");

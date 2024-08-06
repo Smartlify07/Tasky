@@ -1,9 +1,10 @@
 "use server";
 import { revalidatePath } from "next/cache";
+import { API_ROUTE } from "./constants";
 
 export async function addTodo(title) {
   try {
-    const response = await fetch(`/api/todos`, {
+    const response = await fetch(`${API_ROUTE}`, {
       method: "POST",
       body: JSON.stringify({
         title,
@@ -23,7 +24,7 @@ export async function addTodo(title) {
 
 export async function updateTodo(title, status, id) {
   try {
-    const response = await fetch(`/api/todos/${id}`, {
+    const response = await fetch(`${API_ROUTE}/${id}`, {
       method: "PATCH",
       body: JSON.stringify({
         title,
@@ -43,7 +44,7 @@ export async function updateTodo(title, status, id) {
 
 export async function deleteTodo(id) {
   try {
-    const response = await fetch(`/api/todos/`, {
+    const response = await fetch(`${API_ROUTE}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
