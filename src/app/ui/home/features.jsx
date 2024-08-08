@@ -1,35 +1,32 @@
+"use client";
+
 import { Lato } from "next/font/google";
+
 import { taskyFeatures } from "@/app/lib/constants";
-import {
-  FaHandshake,
-  FaTrophy,
-  FaTrello,
-  FaSlack,
-  FaGoogleDrive,
-} from "react-icons/fa";
-import Image from "next/image";
+import { FaHandshake } from "react-icons/fa";
 import { useIcons } from "@/app/lib/hooks";
+import { Fade, Zoom } from "react-awesome-reveal";
 const lato = Lato({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
 
 export default function Features() {
-  const features = [...taskyFeatures];
-  const { GoogleDrive, Trello, Slack } = useIcons();
   return (
     <section className={`${lato.className} py-20`}>
       <h1 className="text-5xl text-dark font-medium text-center mb-10">
         Why Choose TaskBud?
       </h1>
 
-      <div className="grid grid-cols-1 gap-5 py-5 md:grid-cols-2  lg:grid-cols-4">
-        <FeatureGamification />
-        <FeatureCollaborate />
-        <FeatureCustomThemes />
-        <FeatureDailyChallenges />
-        <FeatureRealTimeSync />
-      </div>
+      <Zoom cascade>
+        <div className="grid grid-cols-1 gap-5 py-5 md:grid-cols-2  lg:grid-cols-4">
+          <FeatureGamification />
+          <FeatureCollaborate />
+          <FeatureCustomThemes />
+          <FeatureDailyChallenges />
+          <FeatureRealTimeSync />
+        </div>
+      </Zoom>
     </section>
   );
 }
