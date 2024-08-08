@@ -2,6 +2,7 @@ import Navbar from "@/app/ui/navbar";
 import Gradient from "./ui/home/gradient";
 import HeroSection from "./ui/home/hero";
 import Features from "./ui/home/features";
+import HowItWorks from "./ui/home/how-it-works";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <div className="container mx-auto py-10 z-10 md:w-11/12 lg:w-10/12">
           <HeroSection />
           <Features />
+          <HowItWorks />
         </div>
       </main>
     </>
