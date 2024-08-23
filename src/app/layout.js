@@ -8,10 +8,14 @@ export const metadata = {
   description: "Taskbud by smartlify",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, modal }) {
+  console.log(modal);
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`relative ${inter.className}`}>
+        {modal}
+        {children}
+      </body>
     </html>
   );
 }

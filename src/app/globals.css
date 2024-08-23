@@ -37,3 +37,7 @@
 .radio-input:checked + .radio-label .radio-inner-circle {
   @apply border-[#ff1111] after:content-[''] after:block after:w-[0.5em] after:h-[0.5em] after:bg-[#ff1111] after:absolute after:-translate-x-2/4 after:-translate-y-2/4 after:rounded-[50%] after:left-2/4 after:top-2/4;
 }
+
+.swiper {
+  @apply w-[500px] h-[100%] py-3 px-4 shadow-md;
+}

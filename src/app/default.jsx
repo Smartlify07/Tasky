@@ -1,3 +1,3 @@
 export default function Default() {
-  return <>Default</>;
+  return null;
 }
