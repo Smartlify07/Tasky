@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: {
+    NEXT_AUTH_SECRET: "8Xr9CZfXZbmMA3zv+37ubMuc2BfwRqZHHFaxwoNWfOE=",
+  },
   async headers() {
     return [
       {

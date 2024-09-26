@@ -1,20 +1,26 @@
-import Navbar from "@/app/ui/navbar";
-import Gradient from "./ui/home/gradient";
-import HeroSection from "./ui/home/hero";
+"use client";
+import Gradient from "./ui/gradient";
+import CallToAction from "./ui/home/call-to-action";
 import Features from "./ui/home/features";
+import Footer from "./ui/footer";
+import Hero from "./ui/home/hero";
 import HowItWorks from "./ui/home/how-it-works";
+import Testimonials from "./ui/home/testimonials";
 
 export default function Home() {
   return (
-    <>
-      <main className="relative min-h-screen px-4 w-full bg-white flex flex-col items-center justify-center md:px-0  overflow-hidden">
-        <Gradient />
-        <div className="container mx-auto py-10 z-10 md:w-11/12 lg:w-10/12">
-          <HeroSection />
-          <Features />
-          <HowItWorks />
-        </div>
-      </main>
-    </>
+    <main
+      className=" min-h-screen w-full 
+    `  md:px-0  overflow-hidden"
+    >
+      <Gradient />
+
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <Testimonials />
+      <CallToAction />
+      <Footer />
+    </main>
   );
 }
